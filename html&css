@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<style type="text/css">
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+body {
+    background: darkslategray;
+}
+section {
+    margin: auto;
+    position: relative;
+    background: url(https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-9xjis/images/winter.jpg);
+    width: 700px;
+    height: 500px;
+    color: white;
+    font-family: Lobster;
+}
+
+h1 {
+   position: absolute;
+   margin: 0;
+   top: 0;
+   left: 340px;
+   font-size: 48px;
+}
+h2 {
+    position: absolute;
+    margin: 0;
+    top: 60px;
+    left:400px;
+    font-size: 36px;
+}
+
+img {
+    position: absolute;
+    top: 200px;
+    left: 120px;
+}
+</style>
+        <title>Happy Holidays!</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://cacpg.herokuapp.com/js/demos/snowfall.min.js"></script>
+<script>
+$(document).ready(function() {
+    snowFall.snow($("section"), {
+        minSize: 1,
+        maxSize: 8,
+        round: true,
+        minSpeed: 1,
+        maxSpeed: 3,
+        flakeCount: 120
+    });
+});
+        
+        </script>
+    </head>
+    <body>
+    
+    <!-- Add your heading below this line -->
+    <section>
+        <h1>Happy Holidays!</h1>
+        <h2>Love, Emily</h2>
+        <img src="https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-9xjis/images/santa.png">
+    </section>
+    
+    </body>
+</html>
